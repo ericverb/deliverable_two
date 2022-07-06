@@ -19,7 +19,7 @@ namespace Deliverable2
                                   "! Please follow me and take a seat. Let's get everyone started with some drinks. We've got water or coffee.");
                 for (int i = 1; i <= partySize; i++)
                 {
-                    string strOutput = "@@Alright, person number " + i + ", water or coffee?@";
+                    string strOutput = "@@Alright, person number " + i + ", water or coffee?@@";
                     strOutput = strOutput.Replace("@", Environment.NewLine);
                     Console.Write(strOutput);
                     string drink = Console.ReadLine();
@@ -39,8 +39,8 @@ namespace Deliverable2
                     }
                 }
 
-                string strOkay = "@@Okay, so that's " + coffee + " coffees and " + water +
-                                 " waters. I'll be right back. Feel free to grab your food@@";
+                string strOkay = "@@@Okay, so that's " + coffee + " coffees and " + water +
+                                 " waters. I'll be right back. Feel free to grab your food@@@";
                 strOkay = strOkay.Replace("@", Environment.NewLine);
                 Console.WriteLine(strOkay);
 
